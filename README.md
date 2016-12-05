@@ -4,7 +4,7 @@ A tool to generate the type of slogans seen in the book "[Dear Evil Tester](http
 
 ## Instructions
 
-- Press the Button "How can I help you?"
+- Press the Button "I want a Slogan"
 - Chortle or groan at the generated slogan
 - Click until your mouse button wears out
 - Anytime you see a slogan you like, click "Tweet This" and share the merriment with your Twitter followers

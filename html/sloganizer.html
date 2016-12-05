@@ -26,6 +26,18 @@
             - //Act More Weird More Frequently
             - //Act More Weird More Frequently to them
             - added be_good: critical
+        2016-December-05
+            - added deployment .bat for windows when moving to github for version control
+            - added patterns to generate
+                - Are you a good little tester?
+                - I'm not Evil, I'm just doing whatever it takes
+                - I'm not evil, I'm necessary
+                - Be the "E" word
+                - Be whatever it takes!
+                - Be good
+                - It might seem Evil, but I do this because I care
+                - Do whatever it takes!
+            - added todos for remaining slogans in the book
     -->
     <style>
 
@@ -161,7 +173,10 @@
         "be_adj" : ["seemingly", "absolutely", "totally", "slightly", "fully",
                     "completely", "overly", "unduly", "unnecessarily"],
 
+        "other_be_s" : ["the \"E\" word", "true", "yourself", "somebody else", "otherworldly", "something else", "it", "them", "that thing", "that other thing", "whatever it takes"],
+
         "be_goodly" : ["#be_good", "#be_adj #be_good"],
+        "be_all_goodly" : ["#be_good", "#be_adj #be_good", "#other_be_s"],
 
         "to_them" : ["", "to THEM", "to everyone", "to yourself", "to someone special",
                     "to them all", "to your boss", "to someone random", "to a stranger",
@@ -174,7 +189,9 @@
         "be_because" : ["you can", "you know you should", "you should", "its important", "I say so", "...just BECAUSE"],
 
         "look" : ["look", "appear", "seem"],
-        "could_be" : ["might be", "could be"],
+        "might_could" : ["might", "could"],
+
+        "could_be" : ["#might_could be"],
         "must_be" :  [ "must be", "has to be"],
         "have_to_be" :  [ "must be", "have to be"],
         "reason_be" : ["#could_be", "#must_be"],
@@ -190,18 +207,32 @@
         "more_or_less" : ["more", "less"],
         "o_more_or_less" : ["", "#more_or_less"],
         "frequently" : ["frequently", "often"],
+        "whatever_it_takes" : ["doing whatever it takes",
+                                "thinking about it",
+                                "dreaming",
+                                "putting in the hours",
+                                "wondering how to be that",
+                                "living the dream",
+                                "practising",
+                                "doing this for your own good"],
+        "what_I_am" :  ["necessary", "essential", "fundamental", "here", "standing over there", "a mirror to your soul", "free"],
+        "something" : ["whatever it takes", "something", "anything", "not move", "not look behind you", "nothing", "not touch that", "the time warp again", "something else", "that thing you do", "what everyone else does", "what no-one would think of", "that thing you forgot to do", "... nope I've forgotten what I was thinking"]
     }
 
     var sentences = [
+    
             "#start I'm not #im_not , #i_do_this #for_you #excla_stop #optional_lol",
             "#start I'm not #im_not , #i_do_this #for_you #o_just #just_because #optional_lol",
             "#start I'm not #im_not , #i_do_this #for_you #because_i_care #care_about !",
             "#start I'm not #im_not , #i_do_this #for_you #because_i_care #care_about more than #than_this ! #optional_lol",
             "#start I'm not #im_not , #i_do_this #for_you #because_i_care #care_about more than #than_this ! #tagline",
+            // Of course I'm not evil, do I look evil?
+            "#start I'm not #im_not ... Do I #look #im_not ?",
             //Do I look evil?
             "Do I #look #im_not ? #it_must_be #optional_lol",
             // Do I look evil? I'm so much more than that
             "Do I #look #im_not ? #better_than_that_now #excla_stop #optional_lol",
+
             // Do I look evil ? I suppose I might be!
             "Do I #look #im_not ? #suppose_might_be #excla_stop #optional_lol",
             // because I care
@@ -210,6 +241,7 @@
             "#start I'm not #im_not , do I #that_way? #optional_lol",
             "#start I'm not #im_not , I #just #that_way! #optional_tagline #optional_lol",
 
+            // I'm not good, I'm better than that
             "#start I'm not #im_not , #i_am_so_much_more #excla_stop #optional_tagline #optional_lol",
 
             "Be #be_goodly #to_them #excla_stop #optional_lol",
@@ -224,6 +256,30 @@
             "#act #more_or_less #be_good #more_or_less #frequently #to_them #excla_stop #optional_lol",
             "#act #more_or_less #be_good now, #to_them #excla_stop #optional_lol",
             "#act #more_or_less #be_good #to_them #more_or_less #frequently #excla_stop #optional_lol",
+            // Are you a good little tester?
+            "Are you a #be_goodly little tester?",
+            // I'm not Evil, I'm just doing whatever it takes
+            "#start I'm not #im_not , I'm just #whatever_it_takes #excla_stop #optional_lol",
+            // I'm not evil, I'm necessary
+            "#start I'm not #im_not , I'm #what_I_am #excla_stop #optional_lol",
+            // Be the "E" word
+            // Be whatever it takes!
+            // Be good
+            "Be #be_all_goodly #excla_stop #optional_lol",
+            // It might seem Evil, but I do this because I care
+            "It #might_could #look #im_not , but #i_do_this #just_because",
+            // Do whatever it takes!
+            "Do #something #excla_stop",
+
+            // TODO:
+            // I'm not laughing 'at' you
+            // If someone left a door open, would you walk in? Of course you would
+            //Well... What if I just... oops ... wasn't me... quick leg it!
+            // I dont want to settle for 'good' testing
+            // If "System Testing is a necessary Evil" then "Evil Testing is a necessary system"
+            // Not all testers are evil, just the good ones
+            // Go on. Break it. You know you want to.
+            // OK! To be honest, I do it 'cause it's fun.
     ]
 
     function randomNumberUpTo(theVal){
@@ -395,6 +451,9 @@
         }
     }
 
+    // only for testing
+    //for(var x=0;x<100;x++){console.log("-" + random_sentence());}
+    //for(var x=0;x<100;x++){console.log("-" + process_sentence(sentences[27]));}
 
 </script>
 </body>
