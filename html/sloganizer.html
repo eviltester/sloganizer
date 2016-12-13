@@ -38,6 +38,8 @@
                 - It might seem Evil, but I do this because I care
                 - Do whatever it takes!
             - added todos for remaining slogans in the book
+        2016-December-13
+            - added I don't break the rules, I bend them
     -->
     <style>
 
@@ -216,7 +218,16 @@
                                 "practising",
                                 "doing this for your own good"],
         "what_I_am" :  ["necessary", "essential", "fundamental", "here", "standing over there", "a mirror to your soul", "free"],
-        "something" : ["whatever it takes", "something", "anything", "not move", "not look behind you", "nothing", "not touch that", "the time warp again", "something else", "that thing you do", "what everyone else does", "what no-one would think of", "that thing you forgot to do", "... nope I've forgotten what I was thinking"]
+        "something" : ["whatever it takes", "something", "anything", "not move", "not look behind you",
+                        "nothing", "not touch that", "the time warp again", "something else", "that thing you do", "what everyone else does",
+                        "what no-one would think of", "that thing you forgot to do", "... nope I've forgotten what I was thinking"],
+        "dont_break_them" : ["rules", "systems", "laws", "procedures", "processes"],
+        "bend_them" : ["bend them", "go around them", "bypass them", "push them", "stress them", "test them", "do just enough to conform",
+                    "show them for what they are", "brandish the sword of truth", "divulge that which no-one else will state",
+                    "lay open their rotten inner core", "debunk them",
+                    "play by their spirit, not their written lore",
+                    "reveal their ambiguities", "expose their flaws", "make clear their errors"]
+
     }
 
     var sentences = [
@@ -270,6 +281,8 @@
             "It #might_could #look #im_not , but #i_do_this #just_because",
             // Do whatever it takes!
             "Do #something #excla_stop",
+            //I don't break the rules, I bend them
+            "I don't break the #dont_break_them , I #bend_them #excla_stop",
 
             // TODO:
             // I'm not laughing 'at' you
@@ -320,7 +333,11 @@
 
                 if(isHash){
                     //console.log("EXPAND IT");
-                    word = expand_text(getRandomValueFromArray(phrases[word]));
+                    var expandThis = phrases[word];
+                    if(expandThis===undefined){
+                        console.log("Cannot find key: " +  word);
+                    }
+                    word = expand_text(getRandomValueFromArray(expandThis));
                 }
 
                 //console.log(word);
