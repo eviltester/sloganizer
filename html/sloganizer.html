@@ -49,12 +49,12 @@
             margin-right:auto;
             max-width: 1000px;
         }
-        .tweetthis{
+        .tweetthis, .pinterestboard, .tweetedthis{
             text-align:center;
             margin: 30px;
         }
 
-        .twitter-share-link{
+        .twitter-share-link, .pinterestboard-link{
             font-size: 1.5em;
         }
 
@@ -114,9 +114,22 @@
 
 <div class="tweetthis">
     <a id="tweetthis" class="twitter-share-link"
-       href="https://twitter.com/intent/tweet?text=Evil%20Tester%20Sloganizer" target="_blank" rel="noopener noreferrer">
+       href="https://twitter.com/intent/tweet?text=%23EvilTesterSloganizer" target="_blank" rel="noopener noreferrer">
         Tweet This</a>
 </div>
+
+<div class="pinterestboard">
+    <a id="pinterestboard" class="pinterestboard-link"
+       href="https://uk.pinterest.com/eviltester/the-evil-tester-sloganizer/" target="_blank" rel="noopener noreferrer">
+        Pinterest Board</a>
+</div>
+
+<div class="tweetedthis">
+    <a id="tweetedthis" class="twitter-share-link"
+       href="https://twitter.com/search?q=%23EvilTesterSloganizer" target="_blank" rel="noopener noreferrer">
+        Tweeted This</a>
+</div>
+
 
 <div id="bookinfo" class="book" style="display:none">
     <h2>If you like this, you'll probably enjoy the book "<a href='http://eviltester.com/page/dearEvilTester/'>Dear Evil Tester</a>"</h2>
@@ -239,6 +252,35 @@
             "in a magazine", "in some grafitti", "scrawled on a bathroom wall",
             "in a fortune cookie", "in some tea leaves", "in my horoscope", "in the paper",
             "in an exam syllabus", "in a standard", "in my spam folder"],
+
+
+        "i_resolve_to_prefix" : ["I will", "I resolve to", "I will try to", "I suppose I could",
+            "I think I might just", "I made a resolution to", "I resolved to"
+        ],
+
+        "find_more_of_this" : ["bugs", "ways to test this", "ways to explore this", "alternatives",
+                                "paths", "risks", "models", "ways to view this", "examples", "evidence"],
+
+        "find_more_prefix" : ["find more", "provide alternative", "supply compelling"],
+
+
+        "o_test_more_prefix" : ["learn to", "",  "practice so that I can", "learn to use my tools to"],
+        "test_more" : ["more", "harder", "better", "effectively", "efficiently", "intelligently", "well"],
+        "question_more" : ["question more", "scrutinize"],
+        "q_more_of_this" : ["requirements", "ambiguity"],
+
+        "exploitable_thing" : ["problem", "risk", "issue", "bug", "defect", "feature"],
+        "exploitable_verb" : ["exploit", "explore", "pursue", "investigate", "follow"],
+        "exploitable_way" : ["further", "more", "diligently", "in depth", "in detail", "tenaciously"],
+        "write_down" : ["write down what I", "create a log of what I"],
+        "write_downable" : ["test", "explore", "question", "decide", "do", "think", "learn"],
+        "test_heck" : ["heck", "life", "essence", "riches", "lifeblood", "source", "mystery", "wonder", "magic"],
+
+        "i_resolve_to_body" : ["#find_more_prefix #find_more_of_this", "#o_test_more_prefix test #test_more",
+                                "#question_more #q_more_of_this", "#exploitable_verb this #exploitable_thing further",
+                                "#write_down #write_downable", "test the #test_heck out of this system"
+                            ],
+
     }
 
     var sentences = [
@@ -298,6 +340,9 @@
         // Testing is all about Bugs, Baby!
         "Testing is all about #whats_it_all_about #baby #excla_stop #I_read_that",
 
+        //"I resolve to Find more Bugs"
+        "#i_resolve_to_prefix #i_resolve_to_body",
+        "I never say ' #i_resolve_to_body ' , I do #excla_stop #optional_lol"
 
         // TODO:
         // I'm not laughing 'at' you
