@@ -45,6 +45,8 @@
             - fixed bug - the initial tweet link was borked
             - added link to pinterest
             - added link to tweeted
+        2016-December-28
+            - Of course I'm not evil... Do I look like it?
     -->
     <style>
 
@@ -286,6 +288,8 @@
                                 "#write_down #write_downable", "test the #test_heck out of this system"
                             ],
 
+        "like_it" : ["like it", "to be", "thus", "so", "thusly"],
+
     }
 
     var sentences = [
@@ -347,7 +351,10 @@
 
         //"I resolve to Find more Bugs"
         "#i_resolve_to_prefix #i_resolve_to_body",
-        "I never say ' #i_resolve_to_body ' , I do #excla_stop #optional_lol"
+        "I never say ' #i_resolve_to_body ' , I do #excla_stop #optional_lol",
+
+        //Of course I'm not evil... Do I look like it?
+        "#start I'm not #im_not ... Do I #look #like_it ?",
 
         // TODO:
         // I'm not laughing 'at' you
@@ -536,6 +543,8 @@
     // only for testing
     //for(var x=0;x<100;x++){console.log("-" + random_sentence());}
     //for(var x=0;x<100;x++){console.log("-" + process_sentence(sentences[27]));}
+    // last one
+    //for(var x=0;x<100;x++){console.log("-" + process_sentence(sentences[sentences.length-1]));}
 
 </script>
 </body>
