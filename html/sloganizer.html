@@ -511,6 +511,12 @@
     }
 
 
+    function changeSloganTo(slogan){
+        document.getElementById("bookinfo").setAttribute("style","display:none");
+        document.getElementById("slogan").innerHTML=slogan;
+        document.getElementById("tweetthis").setAttribute("href",
+                encodeURI("https://twitter.com/intent/tweet?text="+slogan)+"%20%23EvilTesterSloganizer");
+    }
 
     function process_sentence(sentence){
         var processedSentence = expand_text(sentence);
@@ -528,12 +534,10 @@
         return process_sentence(sentence);
     }
 
+
     function changeSlogan(){
         var slogan = random_sentence();
-        document.getElementById("bookinfo").setAttribute("style","display:none");
-        document.getElementById("slogan").innerHTML=slogan;
-        document.getElementById("tweetthis").setAttribute("href",
-                encodeURI("https://twitter.com/intent/tweet?text="+slogan)+"%20%23EvilTesterSloganizer");
+        changeSloganTo(slogan);
 
         if(randomNumberUpTo(25)>23){
             document.getElementById("bookinfo").setAttribute("style","display");
