@@ -290,6 +290,18 @@
 
         "like_it" : ["like it", "to be", "thus", "so", "thusly"],
 
+        "im_not_in_this_business" : ["Confidence", "Confidence Building", "'nice'", "Happy", "Illusion", "Hope", "Prayer", "Therapy", "Psychic", "'I want you to like me'"],
+        "sure" : ["sure", "sure you're sure", "certain", "really sure", "absolutely sure"],
+        "aboutthat" : ["", "about that"],
+        "im_in_this_business" : ["Fear", "Reality", "Clarity", "Information", "Honesty", "Shattered Illusion",
+                                "Insight", "Risk", '"are you #sure #aboutthat ?"', "Change", "Doubt", "Uncertainty",
+                                "Exploration", "Bug", "Defect", "Problem"],
+        "conman" : ["Con Man", "Confidence Man", "Grifter", "Hustler", "Card Shark"],
+        "magicman" : ["Magician", "Illusionist", "Prestidigitator"],
+        "magicbusiness" : ["Illusion", "Magic"],
+        "person_in_this_business" : ["#conman is in the Confidence", "#magicman is in the #magicbusiness"],
+        "me_or_someone_in_business" : ["#start I'm not in the #im_not_in_this_business", "A #person_in_this_business"],
+
     }
 
     var sentences = [
@@ -355,6 +367,10 @@
 
         //Of course I'm not evil... Do I look like it?
         "#start I'm not #im_not ... Do I #look #like_it ?",
+
+        // I'm not in the confidence business, I'm in the fear business
+        "#me_or_someone_in_business business, I'm in the #im_in_this_business business #excla_stop #optional_lol",
+
 
         // TODO:
         // I'm not laughing 'at' you
