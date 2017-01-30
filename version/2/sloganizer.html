@@ -143,12 +143,6 @@
 </div>
 
 
-<div id="sloganhistory" style="display:none">
-    <h2>History</h2>
-    <ul id="sloganhistorylist">
-    </ul>
-</div>
-
 
 <script>
     var phrases = {
@@ -272,7 +266,7 @@
         ],
 
         "find_more_of_this" : ["bugs", "ways to test this", "ways to explore this", "alternatives",
-                                "paths", "risks", "models", "ways to view this", "examples", "evidence"],
+            "paths", "risks", "models", "ways to view this", "examples", "evidence"],
 
         "find_more_prefix" : ["find more", "provide alternative", "supply compelling"],
 
@@ -290,9 +284,9 @@
         "test_heck" : ["heck", "life", "essence", "riches", "lifeblood", "source", "mystery", "wonder", "magic"],
 
         "i_resolve_to_body" : ["#find_more_prefix #find_more_of_this", "#o_test_more_prefix test #test_more",
-                                "#question_more #q_more_of_this", "#exploitable_verb this #exploitable_thing further",
-                                "#write_down #write_downable", "test the #test_heck out of this system"
-                            ],
+            "#question_more #q_more_of_this", "#exploitable_verb this #exploitable_thing further",
+            "#write_down #write_downable", "test the #test_heck out of this system"
+        ],
 
         "like_it" : ["like it", "to be", "thus", "so", "thusly"],
 
@@ -300,8 +294,8 @@
         "sure" : ["sure", "sure you're sure", "certain", "really sure", "absolutely sure"],
         "aboutthat" : ["", "about that"],
         "im_in_this_business" : ["Fear", "Reality", "Clarity", "Information", "Honesty", "Shattered Illusion",
-                                "Insight", "Risk", '"are you #sure #aboutthat ?"', "Change", "Doubt", "Uncertainty",
-                                "Exploration", "Bug", "Defect", "Problem"],
+            "Insight", "Risk", '"are you #sure #aboutthat ?"', "Change", "Doubt", "Uncertainty",
+            "Exploration", "Bug", "Defect", "Problem"],
         "conman" : ["Con Man", "Confidence Man", "Grifter", "Hustler", "Card Shark"],
         "magicman" : ["Magician", "Illusionist", "Prestidigitator"],
         "magicbusiness" : ["Illusion", "Magic"],
@@ -536,22 +530,8 @@
     function changeSloganTo(slogan){
         document.getElementById("bookinfo").setAttribute("style","display:none");
         document.getElementById("slogan").innerHTML=slogan;
-        var encodedUri = encodeURI("https://twitter.com/intent/tweet?text="+slogan)+"%20%23EvilTesterSloganizer";
-        document.getElementById("tweetthis").setAttribute("href", encodedUri);
-
-        // add to history
-        document.getElementById("sloganhistory").removeAttribute("style");
-        var ul = document.getElementById("sloganhistorylist");
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(slogan + " "));
-        var lia = document.createElement("a");
-        lia.setAttribute("href", encodedUri);
-        lia.innerHTML="[tweet this]";
-        li.appendChild(lia);
-        ul.insertBefore(li, ul.childNodes[0]);
-        //ul.appendChild(li);
-
-
+        document.getElementById("tweetthis").setAttribute("href",
+                encodeURI("https://twitter.com/intent/tweet?text="+slogan)+"%20%23EvilTesterSloganizer");
     }
 
     function process_sentence(sentence){

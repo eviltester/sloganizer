@@ -14,8 +14,9 @@ A tool to generate the type of slogans seen in the book "[Dear Evil Tester](http
 The tool is live at:
 
 - http://eviltester.com/apps/sloganizer/version/1/sloganizer.html
-
-Above version is stable and used for training.
+    - Above version is stable and used for training.
+- http://eviltester.com/apps/sloganizer/version/2/sloganizer.html
+    - Above version does not have the 'history' functionality.
 
 Working version is at:
 
@@ -27,4 +28,10 @@ Working version is at:
 - About the Book - http://eviltester.com/page/dearEvilTester/
 - https://www.amazon.co.uk/Dear-Evil-Tester-Provocative-Approach/dp/0956733271
 - https://www.amazon.com/Dear-Evil-Tester-Provocative-Approach/dp/0956733271
+
+
+
+## History
+
+- 30/01/2017 - added history to the sloganizer
 
