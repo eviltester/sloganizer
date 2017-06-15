@@ -2,35 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>The Evil Tester Sloganizer</title>
-
-    <!-- START: only on web, not in the app -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-    <!-- END: only on web, not in the app -->
 
     <link rel="stylesheet" href="css/sloganizer/sloganizer.css">
 
 </head>
 <body>
 
-<!-- START: only on web, not in the app -->
-<nav class="navbar navbar-inverse navbar-static-top">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="/">EvilTester.com</a>
-    </div>
-    <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li><a href="/page/dearEvilTester">About The Book</a></li>
-            <li><a href="http://blog.eviltester.com">Read The Blog</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
+<script type="text/javascript" src="cordova.js"></script>
 
 <h1 class="title">The Evil Tester Sloganizer</h1>
-<!-- END: only on web, not in the app -->
 
 
 <div class="title">
@@ -38,6 +21,8 @@
 </div>
 
 <p class="slogan"><span id="slogan">How can I help you?</span></p>
+
+<!--
 
 <div class="tweetthis">
     <a id="tweetthis" class="twitter-share-link"
@@ -58,10 +43,13 @@
 </div>
 
 
+
+
 <div id="bookinfo" class="book" style="display:none">
     <h2>If you like this, you'll probably enjoy the book "<a href='http://eviltester.com/page/dearEvilTester/'>Dear Evil Tester</a>"</h2>
 </div>
 
+-->
 
 <div id="sloganhistory" style="display:none">
     <h2>History</h2>
@@ -72,19 +60,12 @@
 
 <script src="js/sloganizer/sloganizer.js"></script>
 <script src="js/sloganizer/gui.js"></script>
-<script src="js/sloganizer/webgui.js"></script>
 <!--
-<script src="js/sloganizer/mobilegui.js"></script>
+<script src="js/webgui.js"></script>
 -->
 
-<script>
+<script src="js/sloganizer/mobilegui.js"></script>
 
-    // only for testing in the web
-    //for(var x=0;x<100;x++){console.log("-" + random_sentence());}
-    //for(var x=0;x<100;x++){console.log("-" + process_sentence(sentences[27]));}
-    // last one
-    //for(var x=0;x<100;x++){console.log("-" + process_sentence(sentences[sentences.length-1]));}
 
-</script>
 </body>
 </html>
