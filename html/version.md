@@ -1,4 +1,4 @@
-Version 4
+Version X
 
 2016-June-15
 
@@ -9,6 +9,10 @@ Version 4
 - create a separate web and phonegap sloganizer.html [x]
 - create sloganizer build using build.phonegap.com
 
+Version 4 2019-02-04
+
+- split the JS into code and data
+- create a crude php version of the JS to call as a service
 
 Version 3,2,1
 
