@@ -11,6 +11,10 @@ Version X
 
 Version 5 2019-02-05
 
+- timing simulation of slow requests
+
+Version 5 2019-02-05
+
 - make it an Ajax version from the front end
 - also have a version which loads data then runs from memory
 
