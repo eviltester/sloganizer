@@ -70,23 +70,31 @@
 </div>
 
 
-<script src="js/sloganizer/sloganizer.js"></script>
-<script src="js/sloganizer/gui.js"></script>
-<script src="js/sloganizer/webgui.js"></script>
 
-<!--
-<script src="js/sloganizer/mobilegui.js"></script>
--->
+<script src="js/sloganizer/sloganizer_async_load.js"></script>
+<script src="js/sloganizer/sloganizer.js"></script>
 
 <script>
 
-    // init();
 
-    // only for testing in the web
-    //for(var x=0;x<100;x++){console.log("-" + random_sentence());}
-    //for(var x=0;x<100;x++){console.log("-" + process_sentence(sentences[27]));}
-    // last one
-    //for(var x=0;x<100;x++){console.log("-" + process_sentence(sentences[sentences.length-1]));}
+    function changeSlogan(){
+
+        var slogan = random_sentence();
+        changeSloganTo(slogan);
+
+        showBookAd();
+    }
+</script>
+
+<script src="js/sloganizer/webgui.js"></script>
+
+
+
+<script>
+
+    // setup the data via async load
+    init();
+
 
 </script>
 </body>

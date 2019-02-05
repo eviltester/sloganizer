@@ -9,6 +9,11 @@ Version X
 - create a separate web and phonegap sloganizer.html [x]
 - create sloganizer build using build.phonegap.com
 
+Version 5 2019-02-05
+
+- make it an Ajax version from the front end
+- also have a version which loads data then runs from memory
+
 Version 4 2019-02-04
 
 - split the JS into code and data
