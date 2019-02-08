@@ -84,15 +84,19 @@
         showBookAd();
     }
 
+    function simulateTimeout(){
+        console.error("Message Timedout, failed server response");
+    }
+
     function changeSlogan(){
 
         // simulate a slow request but do it all in memory
         var timetowait = Math.floor(Math.random() * 5000);
         console.log(timetowait);
         if(timetowait>4900){
-            console.error("Message Timedout, simulated failed server response");
+            setTimeout(simulateTimeout, 5000);
         }else{
-            setTimeout("actuallyChangeSlogan()", timetowait);
+            setTimeout(actuallyChangeSlogan, timetowait);
         }
 
 
