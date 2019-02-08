@@ -6,10 +6,45 @@ var phrases = {
     "im_not" : ["evil", "good", "nasty", "unpleasant",
         "rude", "arrogant", "bad", "pedantic"],
     "i_am" : ["I'm", "I am"],
-    "o_just" : ["", "#just"],
 
-    "just" : ["just", "only"],
     "o_just" : ["", "#just"],
+    "just" : ["just", "only"],
+
+    "when_you" : ["#o_just", "simply", "if you", "you should", "do", "when you"],
+    "when_you_dont" : ["do not", "simply do not", "if you fail to", "failing to", "don't", "when you do not", "when you don't"],
+
+    "use_the" : ["use the", "apply the", "adopt the", "strategise using the", "embrace the", "fully utilise the", "understand the"],
+    "pyramid" : ["#pyramid_name #pyramid_type"],
+    "standard_body" : ["ISO", "IEEE", "ISEB"],
+    "pyramid_name" : ["Test Automation", "Testing", "Automation", "Agile Automation", "Agile", "Heuristic Testing", "#standard_body Standard", "Structured Testing", "Exploratory Testing"],
+    "pyramid_type" : ["Pyramid", "Ice Cream Cone", "Iceberg", "Volcano", "Spheroid", "Quadrants", "Octagon", "Quadrilateral", "Model", "Approach"],
+
+    "then" : ["then"],
+    "obviously" : ["obviously", "clearly", "undoubtedly", "indubitably", "really", "truly"],
+    "quickly" : ["quickly", "instantly", "immediately"],
+    "o_really" : ["", "#quickly", "#obviously"],
+    "you_will" : ["you'll", "you will", "the project will", "the team will"],
+    "then_you" : ["#then #you_will"],
+
+    "be_fine" : ["be fine", "ace this", "have a great strategy", "be using best practice", "be cutting edge", "be Agile", "be good", "ace this", "#automate_well"],
+
+    "not" : ["not", "never", "fail to", "be unable to"],
+    "worst" : ["the worst", "a poor", "a dreadful", "an abhorrent", "a smelly", "a cthulhu inspired"],
+
+    "be_not_fine" : ["#not #be_fine", "deliver nothing", "fail", "fail and fail again", "have #worst strategy", "be using #worst practice", "be on the bottom rung", "be anything but Agile", "be poor", "never ace this", "#automate_poorly"],
+
+    "be_automating" : ["automate", "be automating"],
+    "be_testing" : ["test", "be testing"],
+    "be_developing" : ["develop", "be developing", "code", "be programming", "release", "build it", "deliver"],
+
+    "be_doing_something" : ["#be_automating", "#be_testing",  "#be_developing"],
+    "goodness" : ["goodness", "greatness", "magnificence", "wonderfullness"],
+    "badness" : ["incompetence", "badness", "woefulness", "dreadfulness"],
+    "ultra": ["ultra", "mega", "super", "great"],
+    "with_goodness" : ["well", "properly", "the one true way", "the best way", "with #ultra #goodness"],
+    "with_badness" : ["badly", "poorly", "nothing", "#worst way", "with #ultra #badness"],
+    "automate_well" : ["#be_doing_something #with_goodness"],
+    "automate_poorly" : ["#be_doing_something #with_badness"],
 
     "that_way!" : ["look like it!", "act that way!"],
     "that_way?" : ["look like it?", "act that way?"],
@@ -156,10 +191,10 @@ var phrases = {
     "magicbusiness" : ["Illusion", "Magic"],
     "person_in_this_business" : ["#conman is in the Confidence", "#magicman is in the #magicbusiness"],
     "me_or_someone_in_business" : ["#start I'm not in the #im_not_in_this_business", "A #person_in_this_business"],
-
 }
 
 var sentences = [
+
 
     "#start I'm not #im_not , #i_do_this #for_you #excla_stop #optional_lol",
     "#start I'm not #im_not , #i_do_this #for_you #o_just #just_because #optional_lol",
@@ -225,7 +260,8 @@ var sentences = [
 
     // I'm not in the confidence business, I'm in the fear business
     "#me_or_someone_in_business business, I'm in the #im_in_this_business business #excla_stop #optional_lol",
-
+    "#when_you #use_the #pyramid #then_you #o_really #be_fine",
+    "#when_you_dont #use_the #pyramid #then_you #o_really #be_not_fine"
 
     // TODO:
     // I'm not laughing 'at' you

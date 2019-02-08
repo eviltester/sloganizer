@@ -5,7 +5,7 @@
 function changeSloganTo(slogan){
 
     document.getElementById("slogan").innerHTML=slogan;
-    var encodedUri = encodeURI("https://twitter.com/intent/tweet?text="+slogan)+"%20%23EvilTesterSloganizer";
+    var encodedUri = encodeURI("https://twitter.com/intent/tweet?text="+slogan)+"%20%23EvilTesterSloganizer%20https://eviltester.com/sloganizer";
     document.getElementById("tweetthis").setAttribute("href", encodedUri);
 
     // add to history

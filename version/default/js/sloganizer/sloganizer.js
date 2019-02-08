@@ -173,10 +173,7 @@ function process_sentence(sentence){
 }
 
 // To create the date for other apps
-/*
-var stringify = {phrases, sentences};
-JSON.stringify(stringify);
- */
-
+//var stringify = {phrases, sentences};
+//JSON.stringify(stringify);
 
 
