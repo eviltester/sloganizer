@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Evil Tester Sloganizer</title>
+
+    <!-- START: only on web, not in the app -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <!-- END: only on web, not in the app -->
+
+    <link rel="stylesheet" href="css/sloganizer/sloganizer.css">
+
+</head>
+<body>
+
+<!-- START: only on web, not in the app -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">EvilTester.com</a>
+    </div>
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="/page/dearEvilTester">About The Book</a></li>
+            <li><a href="http://blog.eviltester.com">Read The Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<h1 class="title">The Evil Tester Hueristicator</h1>
+<!-- END: only on web, not in the app -->
+
+
+<div class="title">
+    <p>Read the Console For output</p>
+</div>
+
+
+
+
+<script src="js/sloganizer/wordlist.js"></script>
+<script src="js/sloganizer/heuristicator.js"></script>
+
+<script>
+
+for(var acronymid=0; acronymid<100; acronymid++){
+
+	var acronym = createAnAcronym(words.wordlist);
+	console.log(acronym.acronym + " - " + acronym.words)
+
+}
+
+</script>
+</body>
+</html>

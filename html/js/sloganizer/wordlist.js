@@ -1,0 +1,28 @@
+var words={"wordlist":[
+["Authorisation", "Authentication", "Automation", "API", "Accessibility", "Ascii", "Available", "Attack", "Average", "Abnormal", "All", "Alpha", "Attributes", "Arguments", "Action", "Aim", "Automate", "Automatic"],
+["Behaviour", "Boundaries", "Binary", "Back", "Batch", "Beginning", "Backup", "Business", "Baseline", "Bad", "Batch", "Broadcast", "Black and White"],
+["Cookies", "Code", "Checklists", "Consumer", "Compatibility", "Consistency", "Copy paste", "Characters", "Confirmation", "Conforms", "Connect", "Connection", "Create", "CPU", "Count", "Combine", "Coverage", "Constraints", "Constrained", "Cause", "Check", "Complexity", "Capacity", "Capability", "Configuration", "Comparison", "Compliance", "Cross-platform", "Colours", "Clean"],
+["Data", "Documentation", "Diagnostics", "Domain Knowledge", "Domain Modelling", "Definitions", "Dates", "Delimiters", "Disconnect", "Delete", "Draft", "Drag", "Drop", "Default", "Diagram", "Difference", "Daily", "Dirty", "Downgrade"],
+["Errors", "Exceptions", "Endpoints", "Error Handling", "Error List", "Error Messages", "Examples", "Exists", "End", "Export", "Enter", "Events", "Extreme", "External", "Effect", "Emotion", "Expectations", "Evil", "Explore", "Experiment", "Enumerate"],
+["Files", "Filters", "Functionality", "Formats", "Few", "Freeze", "Future", "Flow", "Functions", "Features", "Feelings", "Frequency", "Fast", "Fake", "Flood"],
+["Garbage In", "Garbage Collection", "Guess", "Grammar", "GPU", "GUI", "Good", "Generic"],
+["Help system", "History", "Height", "Hibernate", "Hold"],
+["Interfaces", "Input", "Installation", "Integration", "Implementation", "Injection", "Interrupt", "Interrogate", "Interact", "Import", "Inconsistent", "Internal", "In", "Invisible", "Impact", "Intense", "Images", "Infinite"],
+["Join", "Jerk", "Jump", "Just", "Junk", "Joy"],
+["Kill", "Keyboard", "Kind", "Kludge", "Key", "Kidding", "Knowledge"],
+["Limits", "Load", "Logging", "Logs", "Length", "Locked", "Leap Years", "Logged In", "Logged Out", "Links", "Legal", "Lite", "Languages", "Localisation"],
+["Modules", "Missing", "Maximum", "Minimum", "Monitoring", "Model", "Memory", "Modify", "Middle", "Mouse", "Many", "Multi-user", "Merge", "Map", "Modelling", "Manipulation", "Mission", "Maintainability", "Manual", "Must", "Mandatory"],
+["Naming", "Negative", "Nouns", "Not exists", "None", "Nothing", "Notation", "Normal", "Network", "Numeric", "Numbers", "Nightly", "New"],
+["Ordering", "Operations", "Off", "Observe", "One", "Out", "Output", "Observation", "Obvious", "Obligation", "Objective", "Obstacle", "Optional", "Old"],
+["Parameters", "Pages", "Principles", "Performance", "Purpose", "Physical", "Positive", "Personas", "Protocols", "Protected", "Present", "Proxy", "Plugins", "Pause", "Processing", "Past", "Present", "Plan", "Path", "Priority"],
+["Query", "Quality", "Qualifications", "Query Strings", "Quantify", "Qualify"],
+["Responsiveness", "Relative to what?", "Relationships", "Relevant", "Reverse", "REST", "Reserved", "Rules", "Refresh", "Random", "Reboot", "Read", "Report", "Resolution", "Regex", "Requirements", "Recovery", "Recon", "Repeat", "Reliable", "Risk", "Revert", "Revise", "Restore", "Remove", "Rate", "Rate Limit"],
+["Speed", "Security", "Status", "Status Codes", "State", "State Transition", "Simplicity", "Structure", "Strings", "Stress", "Special Characters", "Space", "Spaces", "Session", "Syntax", "Size", "Switch Off", "Schedule", "Search", "Single", "Some", "Single-user", "Sequence", "Stakeholder", "Scalability", "Scenarios", "Standards", "Similarity", "Slow", "Separate", "Stream", "Specific", "Styling"],
+["Time", "Times", "Timing", "Timely", "Transitions", "Transformations", "Technology", "Types", "Text", "Time Zones", "Temporal", "Temporary", "Technology", "Techniques", "Testability", "Tools", "Timescales"],
+["Unicode", "Unavailable", "Update", "User", "Usage", "Usability", "Upgrade"],
+["Verbs", "Versions", "Volume", "Violation", "Variables", "Varying", "Visible", "Verify", "Validate", "View", "Verbose", "Visible", "Variation"],
+["Width", "Without", "Within", "Wacky", "Wander", "Weird", "Warped", "Waste", "Wild"],
+["Young", "Yield"],
+["Zoom", "Zany", "Zap"]
+]
+}
